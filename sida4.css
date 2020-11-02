@@ -1,0 +1,56 @@
+nav{
+	color: white; /*Säger att färgen på nav ska vara vit*/
+	font-size: 2em; /*Säger storleken på texten i em*/
+	background-color: blue; /*Säger bakgrundsfärgen, detta fallet blå*/
+	text-align: center; /*Säger att texten ska placeras i mitten av dokumentet*/
+	//height: 100px; /*Bestämmer höjden på rutan*/
+}
+
+nav ul{
+	display:flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+
+
+body{
+	  display: grid; /*Säger att grid ska visas*/
+	  grid-template-columns: 1fr; /*Säger att griden bara ska ha en kolumn*/
+	  grid-template-rows: auto auto 320px 250px; /*Bestämmer storleken på alla raderm i detta fallet 4 stycken*/
+	  grid-template-areas: /*Ger alla rader namn: nav, header etc*/
+	  "nav"
+	  "header "
+	  "main"
+	  "footer"
+	}
+
+body{
+	background-color: black;  /*Bestämmer bakgrundsfärgen i dokumentet*/
+}
+
+.grid-item {
+	  padding: 60px; /*Bestämmer utrymmet mellan texten och kanten i grid*/
+	  font-size: 30px; 
+	  text-align: center; /*Bestämmer hur de förhåller sig till varandra*/
+	}
+	
+
+
+p{ /*Stylar texten*/
+	font-size: 2em;
+	color: white;
+	outline: 1px solid white; /*Bestämmer kant färgen och stil, i detta fallet solid vit färg med 1px tjocklek*/
+}
+
+li a{ /*Stylar listan*/
+	font-size: 30;
+	color: white;
+}
+
+table, th, td { /*Stylar tabellen*/
+  border: 1px solid white;
+  color: white;
+  font-size: 30
+}
+
